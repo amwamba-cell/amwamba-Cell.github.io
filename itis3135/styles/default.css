@@ -1,0 +1,53 @@
+
+body {
+            background-color: #f2e4d4;
+            color: #7c5517;
+            font-size: 18px;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-bottom: 5%;
+        }
+        /* h1 uses a second, distinct font from the body so the page has 2+ fonts */
+        h1 {
+            font-family: 'Trebuchet MS', sans-serif;
+            font-size: 34px;
+        }
+        nav {
+            text-align: center;
+            font-size: 16px;
+        }
+        header {
+            padding-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        footer {                        
+            /* background-color: #4d72eb; */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        main p {
+            /* margin: 0 auto; */
+            text-align: center;
+        }
+        a {
+            color: #7c5517;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #543a0f;
+        }
+        main {
+            text-align: left;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        h2 {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        img {
+            width: 30%;
+            height: auto;
+        }
