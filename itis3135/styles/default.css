@@ -3,7 +3,7 @@ body {
             background-color: #f2e4d4;
             color: #7c5517;
             font-size: 18px;
-            text-align: center;
+            text-align: left;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             padding-bottom: 5%;
         }
@@ -28,7 +28,7 @@ body {
         }
         main p {
             /* margin: 0 auto; */
-            text-align: center;
+            text-align: left;
         }
         a {
             color: #7c5517;
@@ -43,7 +43,7 @@ body {
             margin-right: 20%;
         }
         h2 {
-            text-align: center;
+            text-align: left;
             font-size: 24px;
         }
 
