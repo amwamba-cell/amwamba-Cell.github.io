@@ -17,14 +17,27 @@ body {
             text-align: center;
             font-size: 16px;
         }
-        header, footer {
-        margin: 25px, auto;
-        text-align: center;
-}
+            header, footer {
+            margin: 25px, auto;
+            text-align: center;
+        }
+
+        main {
+                text-align: left;
+                margin-left: 20%;
+                margin-right: 20%;
+        }
+
         p {
             margin: 0 auto;
             text-align: left;
         }
+
+        h2 {
+            text-align: center;
+            font-size: 24px;
+        }
+
         a {
             color: #7c5517;
             text-decoration: underline;
@@ -32,14 +45,31 @@ body {
         a:hover {
             color: #543a0f;
         }
-        main {
-            text-align: left;
-            margin-left: 20%;
-            margin-right: 20%;
-        }
-        h2 {
+        
+        figure { 
             text-align: center;
-            font-size: 24px;
+            margin: 25px auto;
+        }
+        
+        figure img { display: block;
+            width: 30%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        blockquote { 
+            text-align: center;
+            font-style: italic;
+            margin: 30px auto;
+            max-width: 600px;
+        }
+
+        ul, ol { 
+            text-align: left;
+        }
+
+        li {
+            margin-bottom: 8px;
         }
 
         img {
