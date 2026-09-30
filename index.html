@@ -7,13 +7,59 @@
     <title>Angie Mwamba | Home</title>
     <!-- <link rel="stylesheet" href="itis3135/styles/default.css"> -->
     <style>
-        
-    
+        body {
+            background-color: #f2e4d4;
+            color: #7c5517;
+            font-size: 18px;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-bottom: 5%;
+        }
+        /* h1 uses a second, distinct font from the body so the page has 2+ fonts */
+        h1 {
+            font-family: 'Trebuchet MS', sans-serif;
+            font-size: 34px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            font-size: 16px;
+        }
+        header, footer {
+            margin: 25px, auto;
+            text-align: center;
+        }
+
+        figure {
+            text-align:center;
+            font-style:italic;
+
+        main {
+            text-align: left;
+            margin-left: 20%;
+            margin-right: 20%;
+
+        p {
+            margin: 0 auto;
+            text-align: left;
+        }
+        a {
+            color: #7c5517;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #543a0f;
+        }
+        main {
+            text-align: left;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        h2 {
+            text-align: center;
+            font-size: 24px;
+        }
     </style>
-
-    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
-    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script> 
-
 </head>
 <body>
     <header>
@@ -25,14 +71,18 @@
         <a href="https://webpages.charlotte.edu/amwamba/">CLT Web</a>
     </nav>
     </header>
-    <hr>
+    <br>
     <main>
         <h2>Home</h2>
         
         <p>Welcome to my home page. <a href="itis3135/">ITIS 3135 Course Page Here</a></p>
 
     </main>
+    <br>
     <footer>
+        <div data-include="components/footer.html"></div>
+        <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+        <script src="scripts/include.min.js"></script>
         <p><em>Capturing moments, one event at a time.</em></p>
     </footer>
 </body>
