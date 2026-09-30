@@ -1,17 +1,18 @@
-document.addEventListener("DOMContentLoaded", async () => {
-    const includeElements = document.querySelectorAll("[data-include]");
+(async function loadComponents() {
+    const placeholders = document.querySelectorAll("[data-include]");
 
-    await Promise.all(Array.from(includeElements, async (element) => {
-        const file = element.getAttribute("data-include");
+    await Promise.all(Array.from(placeholders, async (placeholder) => {
+        const componentPath = placeholder.getAttribute("data-include");
+        const componentUrl = new URL(componentPath, document.baseURI);
 
         try {
-            const response = await fetch(file);
+            const response = await fetch(componentUrl);
             if (!response.ok) {
-                throw new Error(`HTTP ${response.status} while loading ${file}`);
+                throw new Error(`HTTP ${response.status}`);
             }
-            element.innerHTML = await response.text();
+            placeholder.innerHTML = await response.text();
         } catch (error) {
-            console.error(`Could not load component: ${file}`, error);
+            console.error(`Unable to load component "${componentPath}":`, error);
         }
     }));
-});
+})();
