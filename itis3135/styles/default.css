@@ -55,6 +55,11 @@ body {
             color: #543a0f;
         }
         
+        .display-name,
+        .public-note {
+            text-align: center;
+        }
+
         figure { 
             text-align: center;
             margin: 25px auto;
