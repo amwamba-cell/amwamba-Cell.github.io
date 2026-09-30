@@ -13,6 +13,15 @@ body {
             font-size: 34px;
             text-align: center;
         }
+
+        hr {
+            border: none;
+            border-top: 2px solid #7c5517;
+            width: 60%;
+            margin: 20px auto;
+            opacity: 0.7;
+        }
+
         nav {
             text-align: center;
             font-size: 16px;
@@ -75,4 +84,23 @@ body {
         img {
             width: 30%;
             height: auto;
+        }
+
+        footer {
+            text-align: center;
+            margin: 25px auto;
+        }
+
+        footer p {
+            text-align: center;
+            margin: 10px auto;
+        }
+
+        footer a {
+            color: #7c5517;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            color: #543a0f;
         }
