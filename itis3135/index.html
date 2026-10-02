@@ -3,25 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/jpeg" href="images/flow_favicon.png">
+  <link rel="icon" type="image/png" href="images/flow_favicon.png">
   <title>Ange Mwamba's Adventurous Meerkat | ITIS3135 | Home</title>
   <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
-  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script> 
 
     <style>
         body {
+        max-width: 1200px;
         background-color: #f2e4d4;
         color: #7c5517;
         font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
         font-size: 18px;
         line-height: 1.5;
-        margin: 0;
+        margin: 0 auto;
         padding: 1rem 2rem 5%;
         text-align: left;
     }
 
         h1 {
-            font-family: "Trebuchet MS", sans-serif;
+            font-family: Trebuchet MS, sans-serif;
             font-size: 34px;
             text-align: center;
         }
@@ -102,11 +102,27 @@
             width: 30%;
         }
 
+        header img {
+            width: 180px;
+        }
+
         footer p {
             margin: 10px auto;
             text-align: center;
         }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 1rem;
+            }
+
+            main {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
     </style>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous" defer></script>
     </head>
 <body>
     <div data-include="components/header.html"></div>
@@ -123,6 +139,9 @@
       Start by reading my <a href="introduction.html">Introduction</a> to learn
       more about who I am and what I'm working on.  
     </p>
+    <figure>
+      <img src="images/fl_favicon.png" alt="Meerkat favicon artwork" width="128">
+    </figure>
   </main>
 
     <div data-include="components/footer.html"></div>
