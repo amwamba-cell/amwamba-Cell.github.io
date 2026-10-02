@@ -1,10 +1,11 @@
 body {
+    max-width: 1200px;
     background-color: #f2e4d4;
     color: #7c5517;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     font-size: 18px;
     line-height: 1.5;
-    margin: 0;
+    margin: 0 auto;
     padding: 1rem 2rem 5%;
     text-align: left;
 }
@@ -45,14 +46,15 @@ p {
     text-align: left;
 }
 
-.display-name,
-.public-note {
-    text-align: center;
-}
-
 h2 {
     font-size: 24px;
     text-align: left;
+}
+
+h6 {
+    font-size: 32px;
+    text-align: center;
+    white-space: nowrap;
 }
 
 a {
@@ -100,4 +102,20 @@ img {
 footer p {
     margin: 10px auto;
     text-align: center;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 1rem;
+    }
+
+    main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    figure img {
+        width: min(100%, 350px);
+    }
+
 }

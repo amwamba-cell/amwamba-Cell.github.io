@@ -33,6 +33,8 @@
         }
 
         header {
+            position: relative;
+            isolation: isolate;
             background-color: var(--brown);
             color: var(--white);
             padding: 3rem 1.5rem;
@@ -107,12 +109,18 @@
             margin-right: 5 auto;
         }
 
-        h2, h3 {
+        h2 {
             color: var(--brown);
             font-family: Georgia, Times New Roman, serif;
             font-size: 28px;
             margin-top: 0
-            
+        }
+
+        h3 {
+            color: var(--brown);
+            font-family: Georgia, Times New Roman, serif;
+            font-size: 28px;
+            margin-top: 0;
         }
 
         p {
@@ -145,11 +153,33 @@
         }
 
         footer {
+            position: relative;
+            isolation: isolate;
             background-color: var(--brown-dark);
             color: var(--white);
             padding: 25px;
             text-align: center;
             margin-top: 30px;
+        }
+
+        header::before,
+        footer::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 100vw;
+            transform: translateX(-50%);
+        }
+
+        header::before {
+            background-color: var(--brown);
+        }
+
+        footer::before {
+            background-color: var(--brown-dark);
         }
 
         footer p {
@@ -190,7 +220,7 @@
         <h1>Angie T. Mwamba</h1>
 
         <p> 
-            Computer Science student, Creative, entrepreneur, and event professional.
+            Computer Science student, Creative Entrepreneur, and Event Professional.
         </p>
 
         <figure>
@@ -288,9 +318,12 @@
 
         <p>&copy; 2026 Angie Mwamba</p>
 
-        <p>Page created by Lux Events &amp; Photography LLC | Certified in Project Management</p>
+        <p>Page created by Lux Events &amp; Photography LLC</p>
+            
+        <p>Certified in Project Management</p>
 
-        <p>Contact: <a href="tel:+11111111111">(111) 111-1111</a></p>
+        <p>Contact: <a href="tel:+11111111111">(111) 111-1111</a>
+        <p>Email: <a href="mailto:amwamba@charlotte.edu">amwamba@charlotte.edu</a></p>
 
         <p>
             <a href="https://validator.w3.org/nu/">
