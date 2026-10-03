@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title">
+  <title id="title">Lux Events and Photography logo</title>
+  <rect x="8" y="22" width="84" height="62" rx="12" fill="#5a3e2b"/>
+  <path d="M30 22l8-12h24l8 12" fill="#b88645"/>
+  <circle cx="50" cy="52" r="21" fill="#f8f3eb"/>
+  <circle cx="50" cy="52" r="13" fill="#b88645"/>
+  <path d="M73 32h9v8h-9z" fill="#f8f3eb"/>
+  <path d="M50 38v28M36 52h28" stroke="#5a3e2b" stroke-width="3"/>
+</svg>

@@ -1,73 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>LuxEvents LLC | Event Planning & Design</title>
-    </head>
-    <boby>
-        <div data-include="components/header.html"></div>
-        <header> <h1>
-            <img src="images/luxevents-logo.png" alt="LuxEvents LLC logo"> LuxEvents LLC </h1>
-        </header>
-        <main>
-            <h2>Event Planning &amp; Design</h2>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="../">
+  <title>Lux Events &amp; Photography LLC | Events and Photography</title>
+  <link rel="icon" type="image/png" href="images/flow_favicon.png">
+  <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+  <style>
+body {
+    max-width: 1200px;
+    background-color: #f2e4d4;
+    color: #7c5517;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 1rem 2rem 5%;
+    text-align: left;
+}
 
-            <p>
-                LuxEvents LLc is a creative event planning and design company dedicated
-                to bringing memorable celebations and experiences to life. We plan and 
-                design events for all occasions, from intimate gatherings and private
-                celebrations to corporate events, weddings, birthdays, graduations,
-                baby showers, community events, and other special occasions.
-            </p>
+h1 {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 34px;
+    margin: 0;
+    text-align: center;
+}
 
-            <p>
-                We believe every event should reflect the people, purpose, and personality
-                behind it. Our approach combines thoughtful planning, creative design,
-                organization, and attention to detail to create events that are beautiful,
-                enjoyable, and meaningful. Whether a client has a complete vision or needs
-                help developing an idea from the beginning, LuxEvents LLC works to turn that
-                vision into an unforgettable experience.
-            </p>
+hr {
+    border: 0;
+    border-top: 2px solid #7c5517;
+    margin: 20px auto;
+    opacity: 0.7;
+    width: 60%;
+}
 
-            <h3>Why Choose LuxEvents LLC?</h3>
-            
-            <ul> 
-                <li>Event planning for all types of occasions</li>
-                <li>Creative and customized event designs</li>
-                <li>Weddings and engagement celebrations</li>
-                <li>Birthday parties and milestone celebrations</li>
-                <li>Baby showers and family celebrations</li> 
-                <li>Graduation parties and school events</li> 
-                <li>Corporate events and professional gatherings</li> 
-                <li>Community and social events</li> 
-                <li>Décor, themes, and event styling</li> 
-                <li>Personalized planning based on each client's vision</li> 
-            </ul>
+header {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    margin: 25px auto;
+    text-align: center;
+}
 
-            <h3>What We Can Do for You</h3>
-            <p>
-                LuxEvents LLC can help clients plan, organize, and design events from the
-                initial idea through the final celebration. We can assist with event concepts,
-                themes, décor, color palettes, venue planning, timelines, guest experiences,
-                vendor coordination, and overall event styling. Our goal is to make the planning
-                process organized and enjoyable while creating an event that feels personal and
-                reflects each client's unique vision.
-            </p>
+footer {
+    margin: 25px auto;
+    text-align: center;
+}
 
-            <p>
-                Whether you are celebrating a major milestone, bringing people together for a
-                special occasion, or planning a professional event, LuxEvents LLC is here to help
-                make your event memorable.
-            </p>
-            
-            <section>
-                <h3>Contact LuxEvents LLC</h3>
-                <p>
-                    <strong>Phone:</strong> (704) 555-0187<br> 
-                    <strong>Email:</strong> hello@luxeventsllc.co<br>
-                    <strong>Address:</strong> 920 Creative Avenue, Charlotte, NC 28223
-                </p>
-            </section>
-        </main>
-    </boby>
-    </html>
+header img {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+}
+
+header p,
+header nav {
+    grid-column: 1 / -1;
+}
+
+nav {
+    font-size: 16px;
+    text-align: center;
+}
+
+main {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: left;
+}
+
+p {
+    margin: 0 auto;
+    text-align: left;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: left;
+}
+
+.display-name {
+    text-align: center;
+}
+
+h6 {
+    font-size: 32px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+a {
+    color: #7c5517;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #543a0f;
+}
+
+figure {
+    margin: 25px auto;
+    text-align: center;
+}
+
+figure img {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    width: 30%;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 30px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+ul,
+ol {
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+li::before {
+    content: "✦";
+    color: #b88645;
+    margin-right: 0.65em;
+}
+
+img {
+    height: auto;
+    width: 30%;
+}
+
+footer p {
+    margin: 10px auto;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 1rem;
+    }
+
+    main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    header {
+        grid-template-columns: 1fr;
+    }
+
+    header img,
+    header p,
+    header nav {
+        grid-column: 1;
+    }
+
+    figure img {
+        width: min(100%, 350px);
+    }
+
+}
+  </style>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+  <div data-include="luxeventsllc.co/components/header.html"></div>
+  <main>
+    <h2>Events and Photography</h2>
+    <section id="services">
+      <!-- The services id gives the Services navigation link a target on this page. -->
+      <h3>Services</h3>
+      <p>Lux Events &amp; Photography LLC helps clients celebrate meaningful moments with event rentals, planning support, and professional photography.</p>
+      <p>We work with clients to shape each event around their needs, from choosing rental details to capturing the moments they want to remember.</p>
+      <ul>
+        <li>Event rentals for celebrations and gatherings</li>
+        <li>Event planning and coordination</li>
+        <li>Professional event photography</li>
+        <li>Portrait photography</li>
+        <li>Thoughtful setup and presentation</li>
+        <li>Personalized service for every client</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <!-- The contact id gives the Contact navigation link a target on this page. -->
+      <h3>ContactUs</h3>
+      <p>Call <a href="tel:+11111111111">(111) 111-1111</a></p>
+      <p>Email <a href="mailto:amwamba@charlotte.edu">amwamba@charlotte.edu</a> to discuss your EVENT.</p>
+    </section>
+  </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.js"></script>
+</body>
+</html>
