@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ange Mwamba's Adventurous Meerkat | ITIS3135 | Introduction Form</title>
+  <link rel="stylesheet" href="styles/default.css">
+  <link rel="icon" type="image/png" href="images/flow_favicon.png">
+  <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+  <div data-include="components/header.html"></div>
+  <main>
+    <h2>Introduction Form</h2>
+    <p>Use this form to share a short introduction.</p>
+    <form method="get">
+      <p><label>First name <input type="text" name="first-name" required></label></p>
+      <p><label>Preferred name <input type="text" name="preferred-name"></label></p>
+      <p><label>Last name <input type="text" name="last-name" required></label></p>
+      <p><label>Email <input type="email" name="email" required></label></p>
+      <p><label>Tell us about yourself <textarea name="introduction" rows="5" required></textarea></label></p>
+      <p><button type="submit">Submit Introduction</button></p>
+    </form>
+  </main>
+  <div data-include="components/footer.html"></div>
+  <script src="scripts/HTMLInclude.js"></script>
+</body>
+</html>
