@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220">
+  <title>Compass adventure card</title>
+  <rect x="8" y="8" width="304" height="204" rx="22" fill="#f2e4d4" stroke="#7c5517" stroke-width="8"/>
+  <circle cx="160" cy="110" r="66" fill="#fff8ef" stroke="#b88645" stroke-width="8"/>
+  <path d="m160 54 19 56-19 56-19-56z" fill="#7c5517"/>
+  <path d="m160 54 19 56-19-14z" fill="#d49a4a"/>
+  <circle cx="160" cy="110" r="9" fill="#f2e4d4"/>
+  <path d="M160 27v18m0 130v18m-83-83h18m130 0h18" stroke="#7c5517" stroke-width="6" stroke-linecap="round"/>
+</svg>

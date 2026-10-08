@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220">
+  <title>Binoculars adventure card</title>
+  <rect x="8" y="8" width="304" height="204" rx="22" fill="#f2e4d4" stroke="#7c5517" stroke-width="8"/>
+  <path d="m102 69 25 4 14 77-20 20-31-7-5-23zM218 69l-25 4-14 77 20 20 31-7 5-23z" fill="#b88645" stroke="#7c5517" stroke-width="8" stroke-linejoin="round"/>
+  <circle cx="112" cy="151" r="24" fill="#46301e" stroke="#d9b66f" stroke-width="8"/>
+  <circle cx="208" cy="151" r="24" fill="#46301e" stroke="#d9b66f" stroke-width="8"/>
+  <path d="M139 103h42l8 34h-58z" fill="#7c5517"/>
+  <path d="M142 90h36" stroke="#7c5517" stroke-width="12" stroke-linecap="round"/>
+</svg>

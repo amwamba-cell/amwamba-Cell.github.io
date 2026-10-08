@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220">
+  <title>Map adventure card</title>
+  <rect x="8" y="8" width="304" height="204" rx="22" fill="#f2e4d4" stroke="#7c5517" stroke-width="8"/>
+  <path d="m62 65 62-19 66 19 68-19v112l-68 19-66-19-62 19z" fill="#fff8ef" stroke="#7c5517" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M124 46v112m66-93v112" stroke="#b88645" stroke-width="6"/>
+  <path d="M87 133c27-51 44 25 72-19s35 1 57-34" fill="none" stroke="#7c5517" stroke-width="7" stroke-dasharray="7 9"/>
+  <path d="m216 70 17 3-9 15" fill="#d49a4a" stroke="#7c5517" stroke-width="4"/>
+  <circle cx="88" cy="132" r="9" fill="#d49a4a" stroke="#7c5517" stroke-width="4"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220">
+  <title>Campsite tent adventure card</title>
+  <rect x="8" y="8" width="304" height="204" rx="22" fill="#f2e4d4" stroke="#7c5517" stroke-width="8"/>
+  <circle cx="241" cy="58" r="23" fill="#d49a4a"/>
+  <path d="M45 174 145 62l106 112z" fill="#b88645" stroke="#7c5517" stroke-width="8" stroke-linejoin="round"/>
+  <path d="m145 62 5 112h101z" fill="#e6c589" stroke="#7c5517" stroke-width="7" stroke-linejoin="round"/>
+  <path d="m128 174 21-42 23 42" fill="#46301e" stroke="#7c5517" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M42 180h238" stroke="#7c5517" stroke-width="7" stroke-linecap="round"/>
+</svg>

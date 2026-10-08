@@ -98,6 +98,34 @@ ol {
     text-align: left;
 }
 
+.card-gallery {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    list-style: none;
+    padding: 0;
+}
+
+.card-gallery li {
+    background-color: #fff8ef;
+    border: 1px solid #b88645;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-gallery li::before {
+    content: none;
+}
+
+.card-gallery li img {
+    display: block;
+    margin: 0 auto 1rem;
+    max-height: 200px;
+    object-fit: contain;
+    width: min(100%, 250px);
+}
+
 li {
     margin-bottom: 8px;
 }
@@ -124,6 +152,10 @@ footer p {
 
     figure img {
         width: min(100%, 350px);
+    }
+
+    .card-gallery {
+        grid-template-columns: 1fr;
     }
 
 }
