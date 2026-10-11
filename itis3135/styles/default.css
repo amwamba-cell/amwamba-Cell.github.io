@@ -17,6 +17,7 @@ h1 {
 }
 
 hr {
+    box-sizing: border-box;
     border: 0;
     border-top: 2px solid #7c5517;
     margin: 20px auto;
