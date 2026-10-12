@@ -71,6 +71,10 @@ a {
     text-decoration: underline;
 }
 
+a:visited {
+    color: #9a6b3c;
+}
+
 a:hover {
     color: #543a0f;
 }
