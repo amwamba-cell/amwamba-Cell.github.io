@@ -40,6 +40,14 @@ nav {
     text-align: center;
 }
 
+header nav a:visited {
+    color: #9a6b3c;
+}
+
+header nav a:hover {
+    color: #543a0f;
+}
+
 main {
     margin-left: 20%;
     margin-right: 20%;
