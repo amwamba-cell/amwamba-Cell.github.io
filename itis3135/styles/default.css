@@ -40,10 +40,6 @@ nav {
     text-align: center;
 }
 
-header nav a:visited {
-    color: #7c5517;
-}
-
 header nav a:hover {
     color: #543a0f;
 }
@@ -77,10 +73,6 @@ h6 {
 a {
     color: #7c5517;
     text-decoration: underline;
-}
-
-a:visited {
-    color: #7c5517;
 }
 
 a:hover {
