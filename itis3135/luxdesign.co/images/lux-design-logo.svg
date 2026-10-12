@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 1320" role="img" aria-labelledby="title description">
+  <title id="title">Lux Design Co logo</title>
+  <desc id="description">Dark brown LD monogram crossed by a gold ribbon and star, above Lux Design Co lettering.</desc>
+  <rect width="1320" height="1320" fill="#fffdf7"/>
+  <g fill="#48230e" font-family="Bodoni 72, Didot, 'Times New Roman', serif" text-anchor="middle">
+    <text x="535" y="675" font-size="610" font-weight="400">L</text>
+    <text x="735" y="750" font-size="610" font-weight="400">D</text>
+  </g>
+  <path d="M330 470 C445 365 555 420 680 525 C835 655 955 710 1055 640 C1005 735 865 755 690 635 C525 520 435 430 355 520 C322 560 338 610 390 650 C313 608 285 523 330 470Z" fill="#c9953c" stroke="#a86f20" stroke-width="5"/>
+  <path d="M760 430 C770 475 790 493 835 505 C790 517 770 535 760 580 C750 535 730 517 685 505 C730 493 750 475 760 430Z" fill="#c9953c"/>
+  <text x="660" y="910" fill="#48230e" font-family="Bodoni 72, Didot, 'Times New Roman', serif" font-size="145" letter-spacing="19" text-anchor="middle">LUX DESIGN</text>
+  <g stroke="#c9953c" stroke-width="5">
+    <path d="M270 1000H515"/>
+    <path d="M805 1000H1050"/>
+  </g>
+  <text x="660" y="1045" fill="#48230e" font-family="Bodoni 72, Didot, 'Times New Roman', serif" font-size="106" text-anchor="middle">.Co</text>
+  <text x="660" y="1150" fill="#48230e" font-family="Arial, sans-serif" font-size="46" letter-spacing="22" text-anchor="middle">LD.C</text>
+</svg>
