@@ -70,6 +70,14 @@ h6 {
     white-space: nowrap;
 }
 
+header nav a:visited {
+    color: #7c5517;
+}
+
+a:visited {
+    color: #7c5517;
+}
+
 a {
     color: #7c5517;
     text-decoration: underline;
