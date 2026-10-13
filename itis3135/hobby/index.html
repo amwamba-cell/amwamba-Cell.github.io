@@ -124,7 +124,8 @@
             display:block; 
             width:100%; 
             height:auto; 
-            border:4px solid #e3eadf; 
+            outline:4px solid #e3eadf;
+            outline-offset:-4px; 
             border-radius:1rem; 
         }
 
@@ -231,50 +232,149 @@
         </nav>
     </header>
     <main>
-        <p class="trail-intro">Choose a trail note above to explore one part of the hobby. The guide opens on <strong>What</strong>; keyboard users can navigate the links and sections in the usual way.</p>
+        <p 
+            class="trail-intro">Choose a trail note above to explore one part of the hobby. The guide opens on <strong>What</strong>; keyboard users can navigate the links and sections in the usual way.
+        </p>
         <section id="what" aria-labelledby="what-title">
-            <p class="kicker">Start here · Home</p><h2 id="what-title">What is day hiking?</h2>
+            <p class="kicker">Start here · Home</p><h2 id="what-title">What Is Day Hiking?</h2>
             <p>Day hiking is walking a marked path and returning home before night. It can be a short neighborhood greenway loop or a full day among ridges. A good hike is less about speed than paying attention: the texture of a trail, a change in weather, birdsong, and the view earned one step at a time.</p>
             <ul class="cards"><li><strong>Pick a route</strong>Choose a distance and difficulty that fit the day.</li><li><strong>Bring the basics</strong>Water, a snack, a charged phone, and a simple plan.</li><li><strong>Leave it better</strong>Stay on trail and carry every bit of litter back out.</li></ul>
             <figure><img src="images/what.svg" width="720" height="400" alt="Illustrated mountain trail winding through green hills"><figcaption>A winding path makes the journey part of the destination.</figcaption></figure><p><em>AI image prompt: “Draw a calm, flat-vector day-hiking scene with layered green mountains, a cream switchback trail, and a warm sunrise; use a cohesive field-guide palette.”</em></p>
         </section>
         <section id="who" aria-labelledby="who-title" hidden>
-            <p class="kicker">The people on the path</p><h2 id="who-title">Who hikes?</h2>
+            <p class="kicker">The people on the path</p><h2 id="who-title">Who Hikes?</h2>
             <p>Hiking welcomes curious beginners, experienced walkers, families, solo explorers, and friends who want time together outdoors. I enjoy the mix of movement and observation: every outing gives me a reason to slow down, notice details, and make a few photographs along the way.</p>
             <ul class="cards"><li><strong>Go at your pace</strong>There is no single right speed or distance.</li><li><strong>Share the plan</strong>Tell someone your route and expected return.</li><li><strong>Be a good trail neighbor</strong>Offer space, a greeting, and patience.</li></ul>
             <figure><img src="images/who.svg" width="720" height="400" alt="Field journal and compass beside a leafy trail branch"><figcaption>Small observations make a trail day memorable.</figcaption></figure><p><em>AI image prompt: “Create a friendly flat-vector field journal and compass beside a leafy branch, in muted pine, cream, and clay colors.”</em></p>
         </section>
+
         <section id="when" aria-labelledby="when-title" hidden>
-            <p class="kicker">Timing the outing</p><h2 id="when-title">When is a good time to hike?</h2>
-            <p>Early morning is often comfortable, leaves room for an unhurried route, and gives extra daylight if plans change. Spring and fall can bring mild temperatures, while summer calls for an earlier start, shade, and more water. Always check the local forecast and park hours before leaving.</p>
-            <ul class="cards"><li><strong>Morning</strong>Start with enough time to finish in daylight.</li><li><strong>Warm months</strong>Avoid peak heat and protect yourself from sun.</li><li><strong>After rain</strong>Check for closures and muddy or slippery conditions.</li></ul>
-            <figure><img src="images/when.svg" width="720" height="400" alt="Sunrise over mountains and a curving trail"><figcaption>Plan around daylight and the day’s weather.</figcaption></figure><p><em>AI image prompt: “Illustrate a sunrise over layered hiking hills, with a clear trail and gentle seasonal colors, as a simple flat-vector field-guide panel.”</em></p>
+            <p 
+                class="kicker">Timing the outing
+            </p>
+            
+            <h2 id="when-title">When Is a Good Time to Hike?</h2>
+            <p>
+                Early morning is often comfortable, leaves room for an unhurried route, and gives extra daylight if plans change. Spring and fall can bring mild temperatures, while summer calls for an earlier start, shade, and more water. Always check the local forecast and park hours before leaving.
+            </p>
+            
+            <ul class="cards">
+                <li><strong>Morning</strong>Start with enough time to finish in daylight.</li>
+                <li><strong>Warm months</strong>Avoid peak heat and protect yourself from sun.</li>
+                <li><strong>After rain</strong>Check for closures and muddy or slippery conditions.</li>
+            </ul>
+
+            <figure>
+                <img src="images/when.svg" width="720" height="400" alt="Sunrise over mountains and a curving trail">
+                <figcaption>Plan around daylight and the day’s weather.</figcaption>
+            </figure>
+            <p>
+                <em>AI image prompt: “Illustrate a sunrise over layered hiking hills, with a clear trail and gentle seasonal colors, as a simple flat-vector field-guide panel.”</em>
+            </p>
         </section>
+
         <section id="where" aria-labelledby="where-title" hidden>
-            <p class="kicker">Finding a route</p><h2 id="where-title">Where can you hike?</h2>
-            <p>Trails can be found in state and national parks, local nature preserves, greenways, and nearby open spaces. Around Charlotte, checking county and state park resources is a practical way to find maintained routes. Choose a route that matches your experience and confirm current access before you go.</p>
-            <ul class="cards"><li><strong>Local greenways</strong>Good for an easy walk close to home.</li><li><strong>State parks</strong>Use official maps and posted trail ratings.</li><li><strong>Nature preserves</strong>Follow access rules and protect sensitive habitats.</li></ul>
-            <figure><img src="images/where.svg" width="720" height="400" alt="Illustrated map marker and route across rolling hills"><figcaption>A map and a little research help set expectations.</figcaption></figure><p><em>AI image prompt: “Design a flat-vector hiking map scene with rolling green hills, a winding cream route, and a simple location marker.”</em></p>
+            <p 
+                class="kicker">Finding a route</p><h2 id="where-title">Where Can You Hike?</h2>
+            <p>Trails can be found in state and national parks, local nature preserves, greenways, and nearby open spaces. Around Charlotte, checking county and state park resources is a practical way to find maintained routes. Choose a route that matches your experience and confirm current access before you go.
+
+            </p>
+            <ul class="cards">
+                <li><strong>Local greenways</strong>Good for an easy walk close to home.</li>
+                <li><strong>State parks</strong>Use official maps and posted trail ratings.</li>
+                <li><strong>Nature preserves</strong>Follow access rules and protect sensitive habitats.</li>
+            </ul>
+
+            <figure>
+                <img src="images/where.svg" width="720" height="400" alt="Illustrated map marker and route across rolling hills">
+                <figcaption>A map and a little research help set expectations.</figcaption>
+            </figure>
+            <p>
+                <em>AI image prompt: “Design a flat-vector hiking map scene with rolling green hills, a winding cream route, and a simple location marker.”</em>
+            </p>
         </section>
+
         <section id="how" aria-labelledby="how-title" hidden>
-            <p class="kicker">A simple trail routine</p><h2 id="how-title">How do you get ready?</h2>
-            <p>Start with a route you can comfortably finish, then check the forecast, trail status, and daylight. Wear sturdy shoes and layers suited to the conditions. Pack water, food, a basic first-aid kit, navigation, and a way to contact help. Turn back if conditions or energy change.</p>
-            <ul class="cards"><li><strong>Before</strong>Share your itinerary and check park updates.</li><li><strong>During</strong>Drink regularly, follow markers, and take breaks.</li><li><strong>After</strong>Check for ticks, clean footwear, and note what worked.</li></ul>
-            <figure><img src="images/how.svg" width="720" height="400" alt="Hiking pack with water bottle and walking poles"><figcaption>Pack for the route, weather, and your own needs.</figcaption></figure><p><em>AI image prompt: “Make a clean flat-vector illustration of a day-hiking backpack, water bottle, and walking poles on a pale sage background.”</em></p>
+            <p 
+                class="kicker">A simple trail routine
+            </p>
+            <h2 id="how-title">How Do You Get Ready?</h2>
+            
+            <p>
+                Start with a route you can comfortably finish, then check the forecast, trail status, and daylight. Wear sturdy shoes and layers suited to the conditions. Pack water, food, a basic first-aid kit, navigation, and a way to contact help. Turn back if conditions or energy change.
+            </p>
+            <ul class="cards">
+                <li><strong>Before</strong>Share your itinerary and check park updates.</li>
+                <li><strong>During</strong>Drink regularly, follow markers, and take breaks.</li>
+                <li><strong>After</strong>Check for ticks, clean footwear, and note what worked.</li>
+            </ul>
+            
+            <figure>
+                <img src="images/how.svg" width="720" height="400" alt="Hiking pack with water bottle and walking poles">
+                <figcaption>
+                    Pack for the route, weather, and your own needs.
+                </figcaption></figure>
+                <p>
+                    <em>AI image prompt: “Make a clean flat-vector illustration of a day-hiking backpack, water bottle, and walking poles on a pale sage background.”</em>
+                </p>
         </section>
+
         <section id="why" aria-labelledby="why-title" hidden>
-            <p class="kicker">A reason to step outside</p><h2 id="why-title">Why go hiking?</h2>
-            <p>Hiking gives me a refreshing break from screens and routines. It creates room for conversation, photography, and quiet focus, while letting the landscape set the pace. Even a short walk can feel like a small reset when I return noticing something new.</p>
-            <ul class="cards"><li><strong>Move</strong>Enjoy gentle exercise at a pace you choose.</li><li><strong>Notice</strong>Look for changing light, plants, and small details.</li><li><strong>Reconnect</strong>Spend unhurried time with yourself or others.</li></ul>
-            <figure><img src="images/why.svg" width="720" height="400" alt="A small hiker looking across a quiet mountain valley"><figcaption>The view is a reminder to pause and look around.</figcaption></figure><p><em>AI image prompt: “Draw a peaceful flat-vector scene with one small hiker looking over a broad green mountain valley, using a warm, restrained palette.”</em></p>
+            <p class="kicker">A reason to step outside</p>
+            <h2 id="why-title">Why Go Hiking?</h2>
+            <p>
+                Hiking gives me a refreshing break from screens and routines. It creates room for conversation, photography, and quiet focus, while letting the landscape set the pace. Even a short walk can feel like a small reset when I return noticing something new.
+            </p>
+            <ul class="cards">
+                <li><strong>Move</strong>Enjoy gentle exercise at a pace you choose.</li>
+                <li><strong>Notice</strong>Look for changing light, plants, and small details.</li>
+                <li><strong>Reconnect</strong>Spend unhurried time with yourself or others.</li>
+            </ul>
+
+            <figure>
+                <img src="images/why.svg" width="720" height="400" alt="A small hiker looking across a quiet mountain valley">
+                <figcaption>
+                    The view is a reminder to pause and look around.
+                </figcaption>
+
+            </figure>
+            <p>
+                <em>AI image prompt: “Draw a peaceful flat-vector scene with one small hiker looking over a broad green mountain valley, using a warm, restrained palette.”</em>
+            </p>
         </section>
+
         <section id="prompts" aria-labelledby="prompts-title" hidden>
-            <p class="kicker">How AI helped</p><h2 id="prompts-title">AI Prompts</h2>
-            <p>AI helped draft the page structure, starter copy, accessibility text, and original SVG illustrations. I reviewed and edited the results for accuracy, clarity, and a consistent visual style. The illustrations are lightweight, locally stored SVG files, so no remote image service is required.</p>
-            <ul class="cards"><li><strong>Site structure</strong>“Build a one-page hiking hobby site with What, Who, When, Where, How, Why, and AI Prompts sections.”</li><li><strong>Visual direction</strong>“Use a cohesive flat-vector field-guide style with pine green, sage, cream, and clay accents.”</li><li><strong>Content pass</strong>“Write concise, beginner-friendly day-hiking guidance and useful image alt text.”</li></ul>
-            <figure><img src="images/prompts.svg" width="720" height="400" alt="Pencil sketching a mountain on an open field notebook"><figcaption>Ideas become useful when they are checked and refined.</figcaption></figure><p><em>AI image prompt: “Create a simple flat-vector field notebook with a pencil drawing a mountain outline; match a calm outdoor field-guide palette.”</em></p>
+            <p 
+                class="kicker">How AI helped
+            </p>
+            <h2 id="prompts-title">AI Prompts</h2>
+            <p>
+                AI helped draft the page structure, starter copy, accessibility text, and original SVG illustrations. I reviewed and edited the results for accuracy, clarity, and a consistent visual style. The illustrations are lightweight, locally stored SVG files, so no remote image service is required.
+            </p>
+            
+            <ul class="cards">
+                <li><strong>Site structure</strong>“Build a one-page hiking hobby site with What, Who, When, Where, How, Why, and AI Prompts sections.”</li>
+                <li><strong>Visual direction</strong>“Use a cohesive flat-vector field-guide style with pine green, sage, cream, and clay accents.”</li>
+                <li><strong>Content pass</strong>“Write concise, beginner-friendly day-hiking guidance and useful image alt text.”</li>
+            </ul>
+
+            <figure>
+                <img src="images/prompts.svg" width="720" height="400" alt="Pencil sketching a mountain on an open field notebook">
+                <figcaption>
+                    Ideas become useful when they are checked and refined.
+                </figcaption>
+            </figure>
+            <p>
+                <em>AI image prompt: “Create a simple flat-vector field notebook with a pencil drawing a mountain outline; match a calm outdoor field-guide palette.”</em>
+            </p>
         </section>
-        <noscript><p class="tip">JavaScript is needed to switch between the guide sections. The What section remains available as the home page.</p></noscript>
+
+        <noscript>
+            <p 
+                class="tip">JavaScript is needed to switch between the guide sections. The What section remains available as the home page.
+            </p>
+        </noscript>
+        
     </main>
     <footer>
         <p>Trail Notes · A day hiking field guide</p>
