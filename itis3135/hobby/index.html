@@ -22,10 +22,13 @@
             box-sizing:border-box;
         }
         body { 
-            margin:0;
+            max-width:1200px;
+            margin:0 auto;
             background:var(--cream);
             color:var(--ink);
-            font:1.05rem/1.65 Trebuchet MS, Arial, sans-serif;
+            font-family:"Trebuchet MS", Arial, sans-serif;
+            font-size:1.05rem;
+            line-height:1.65;
         }
 
         header { 
@@ -37,6 +40,7 @@
         }
 
         h1 { 
+            font-family:Georgia, serif;
             margin:0;
             font-size:clamp(2.25rem,6vw,4rem);
             letter-spacing:.04em;
@@ -54,6 +58,10 @@
             justify-content:center;
             gap:.45rem; max-width:68rem;
             margin:auto;
+        }
+
+        header nav a {
+            color:#fffdf7;
         }
 
         nav a { 
@@ -98,7 +106,8 @@
             display:none;
         }
 
-        h2 { margin:.1rem 0 .8rem;
+        h2 { font-family:Georgia, serif;
+            margin:.1rem 0 .8rem;
             color:var(--pine);
             font-size:clamp(1.8rem,4vw,2.5rem);
         }
@@ -206,7 +215,8 @@
 <body>
     <header>
         <h1>Day Hiking</h1>
-        <p>A day hiking field guide: take a breath, find a path, and see what’s around the bend.</p>
+        <p><em>A day hiking field guide: take a breath, find a path, and see what’s around the bend.</em></p>
+        <!-- The span elements add visible separators between nav links; aria-hidden keeps them out of screen-reader output. -->
         <nav aria-label="Field guide sections">
             <a href="#what" aria-controls="what">What</a><span aria-hidden="true"> | </span>
             <a href="#who" aria-controls="who">Who</a><span aria-hidden="true"> | </span>
@@ -218,6 +228,7 @@
         </nav>
     </header>
     <main>
+        <!-- Class attributes apply shared styles to repeated components; id attributes uniquely identify sections for navigation and connect headings to their sections. -->
         <p 
             class="trail-intro">Choose a trail note above to explore one part of the hobby. The guide opens on <strong>What</strong>; keyboard users can navigate the links and sections in the usual way.
         </p>
@@ -225,13 +236,13 @@
             <p class="kicker">Start here · Home</p><h2 id="what-title">What Is Day Hiking?</h2>
             <p>Day hiking is walking a marked path and returning home before night. It can be a short neighborhood greenway loop or a full day among ridges. A good hike is less about speed than paying attention: the texture of a trail, a change in weather, birdsong, and the view earned one step at a time.</p>
             <ul class="cards"><li><strong>Pick a route</strong>Choose a distance and difficulty that fit the day.</li><li><strong>Bring the basics</strong>Water, a snack, a charged phone, and a simple plan.</li><li><strong>Leave it better</strong>Stay on trail and carry every bit of litter back out.</li></ul>
-            <figure><img src="images/what.svg" width="720" height="400" alt="Illustrated mountain trail winding through green hills"><figcaption>A winding path makes the journey part of the destination.</figcaption></figure><p><em>AI image prompt: “Draw a calm, flat-vector day-hiking scene with layered green mountains, a cream switchback trail, and a warm sunrise; use a cohesive field-guide palette.”</em></p>
+            <figure><img src="images/what.svg" width="720" height="400" alt="Illustrated mountain trail winding through green hills"><figcaption>A winding path makes the journey part of the destination.<br><em>AI image prompt: “Draw a calm, flat-vector day-hiking scene with layered green mountains, a cream switchback trail, and a warm sunrise; use a cohesive field-guide palette.”</em></figcaption></figure>
         </section>
         <section id="who" aria-labelledby="who-title" hidden>
             <p class="kicker">The people on the path</p><h2 id="who-title">Who Hikes?</h2>
             <p>Hiking welcomes curious beginners, experienced walkers, families, solo explorers, and friends who want time together outdoors. I enjoy the mix of movement and observation: every outing gives me a reason to slow down, notice details, and make a few photographs along the way.</p>
             <ul class="cards"><li><strong>Go at your pace</strong>There is no single right speed or distance.</li><li><strong>Share the plan</strong>Tell someone your route and expected return.</li><li><strong>Be a good trail neighbor</strong>Offer space, a greeting, and patience.</li></ul>
-            <figure><img src="images/who.svg" width="720" height="400" alt="Field journal and compass beside a leafy trail branch"><figcaption>Small observations make a trail day memorable.</figcaption></figure><p><em>AI image prompt: “Create a friendly flat-vector field journal and compass beside a leafy branch, in muted pine, cream, and clay colors.”</em></p>
+            <figure><img src="images/who.svg" width="720" height="400" alt="Field journal and compass beside a leafy trail branch"><figcaption>Small observations make a trail day memorable.<br><em>AI image prompt: “Create a friendly flat-vector field journal and compass beside a leafy branch, in muted pine, cream, and clay colors.”</em></figcaption></figure>
         </section>
 
         <section id="when" aria-labelledby="when-title" hidden>
@@ -252,11 +263,7 @@
 
             <figure>
                 <img src="images/when.svg" width="720" height="400" alt="Sunrise over mountains and a curving trail">
-                <figcaption>Plan around daylight and the day’s weather.</figcaption>
-            </figure>
-            <p>
-                <em>AI image prompt: “Illustrate a sunrise over layered hiking hills, with a clear trail and gentle seasonal colors, as a simple flat-vector field-guide panel.”</em>
-            </p>
+                <figcaption>Plan around daylight and the day’s weather.<br><em>AI image prompt: “Illustrate a sunrise over layered hiking hills, with a clear trail and gentle seasonal colors, as a simple flat-vector field-guide panel.”</em></figcaption></figure>
         </section>
 
         <section id="where" aria-labelledby="where-title" hidden>
@@ -273,11 +280,7 @@
 
             <figure>
                 <img src="images/where.svg" width="720" height="400" alt="Illustrated map marker and route across rolling hills">
-                <figcaption>A map and a little research help set expectations.</figcaption>
-            </figure>
-            <p>
-                <em>AI image prompt: “Design a flat-vector hiking map scene with rolling green hills, a winding cream route, and a simple location marker.”</em>
-            </p>
+                <figcaption>A map and a little research help set expectations.<br><em>AI image prompt: “Design a flat-vector hiking map scene with rolling green hills, a winding cream route, and a simple location marker.”</em></figcaption></figure>
         </section>
 
         <section id="how" aria-labelledby="how-title" hidden>
@@ -299,10 +302,7 @@
                 <img src="images/how.svg" width="720" height="400" alt="Hiking pack with water bottle and walking poles">
                 <figcaption>
                     Pack for the route, weather, and your own needs.
-                </figcaption></figure>
-                <p>
-                    <em>AI image prompt: “Make a clean flat-vector illustration of a day-hiking backpack, water bottle, and walking poles on a pale sage background.”</em>
-                </p>
+                <br><em>AI image prompt: “Make a clean flat-vector illustration of a day-hiking backpack, water bottle, and walking poles on a pale sage background.”</em></figcaption></figure>
         </section>
 
         <section id="why" aria-labelledby="why-title" hidden>
@@ -321,12 +321,7 @@
                 <img src="images/why.svg" width="720" height="400" alt="A small hiker looking across a quiet mountain valley">
                 <figcaption>
                     The view is a reminder to pause and look around.
-                </figcaption>
-
-            </figure>
-            <p>
-                <em>AI image prompt: “Draw a peaceful flat-vector scene with one small hiker looking over a broad green mountain valley, using a warm, restrained palette.”</em>
-            </p>
+                <br><em>AI image prompt: “Draw a peaceful flat-vector scene with one small hiker looking over a broad green mountain valley, using a warm, restrained palette.”</em></figcaption></figure>
         </section>
 
         <section id="prompts" aria-labelledby="prompts-title" hidden>
@@ -348,11 +343,7 @@
                 <img src="images/prompts.svg" width="720" height="400" alt="Pencil sketching a mountain on an open field notebook">
                 <figcaption>
                     Ideas become useful when they are checked and refined.
-                </figcaption>
-            </figure>
-            <p>
-                <em>AI image prompt: “Create a simple flat-vector field notebook with a pencil drawing a mountain outline; match a calm outdoor field-guide palette.”</em>
-            </p>
+                <br><em>AI image prompt: “Create a simple flat-vector field notebook with a pencil drawing a mountain outline; match a calm outdoor field-guide palette.”</em></figcaption></figure>
         </section>
 
         <noscript>
@@ -363,7 +354,7 @@
         
     </main>
     <footer>
-        <p>Trail Notes · A day hiking field guide</p>
+        <p><em>Trail Notes · A day hiking field guide</em></p>
         <nav class="validation" aria-label="Validation links">
             <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Famwamba%2Fitis3135%2Fhobby%2F">HTML validation</a>
             <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Famwamba%2Fitis3135%2Fhobby%2F">CSS validation</a>
@@ -377,21 +368,22 @@
         function showSection(id, updateHistory = true) {
             const target = document.getElementById(id);
             if (!sections.includes(target)) return;
-            sections.forEach(section => { section.hidden = section !== target; });
-            sectionLinks.forEach(link => {
+            sections.forEach((section) => { section.hidden = section !== target; });
+            document.title = document.querySelector("header h1").textContent.trim() + " | " + target.querySelector("h2").textContent.trim();
+            sectionLinks.forEach((link) => {
                 const active = link.getAttribute('aria-controls') === id;
                 if (active) link.setAttribute('aria-current', 'page');
                 else link.removeAttribute('aria-current');
             });
             if (updateHistory && location.hash !== `#${id}`) history.replaceState(null, '', `#${id}`);
         }
-        sectionLinks.forEach(link => link.addEventListener('click', event => {
+        sectionLinks.forEach((link) => link.addEventListener('click', (event) => {
             event.preventDefault();
             showSection(link.getAttribute('aria-controls'));
             document.getElementById(link.getAttribute('aria-controls')).focus({preventScroll:true});
             window.scrollTo({top:0, behavior:'smooth'});
         }));
-        sections.forEach(section => section.tabIndex = -1);
+        sections.forEach((section) => section.tabIndex = -1);
         window.addEventListener('hashchange', () => showSection(location.hash.slice(1), false));
         showSection(location.hash.slice(1) || 'what', false);
     </script>
