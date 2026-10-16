@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A field guide to day hiking: the people, seasons, places, gear, and reasons that make a trail day worthwhile.">
     <title>Day Hiking | Trail Notes Field Guide</title>
-    <link rel="icon" type="image/svg+xml" href="images/trail-favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="38x38" href="images/trail-favicon.svg">
     <style>
         :root { 
             color-scheme: light;
@@ -72,6 +72,12 @@
             color:#fffdf7;
             text-decoration:none;
             font-weight:700;
+        }
+
+        .trail-divider {
+            color:#e9ae65;
+            font-size:1.25rem;
+            line-height:1;
         }
 
         nav a:hover,
@@ -202,6 +208,16 @@
             border-radius:.35rem; 
         }
 
+        @media (max-width:600px) {
+            header { padding:1.6rem .8rem 1.2rem; }
+            main { width:calc(100% - 1rem); margin:1rem auto 2rem; }
+            section { padding:1rem; }
+            nav { gap:.25rem; }
+            nav a { padding:.35rem .62rem; }
+            .trail-divider { font-size:1rem; }
+            figure { margin:1rem auto; }
+        }
+
         :focus-visible { 
             outline:3px solid var(--clay); 
             outline-offset:3px; 
@@ -216,14 +232,14 @@
     <header>
         <h1>Day Hiking</h1>
         <p><em>A day hiking field guide: take a breath, find a path, and see what’s around the bend.</em></p>
-        <!-- The span elements add visible separators between nav links; aria-hidden keeps them out of screen-reader output. -->
+        <!-- The span elements draw a winding trail between nav links; aria-hidden keeps the decorative markers out of screen-reader output. -->
         <nav aria-label="Field guide sections">
-            <a href="#what" aria-controls="what">What</a><span aria-hidden="true"> | </span>
-            <a href="#who" aria-controls="who">Who</a><span aria-hidden="true"> | </span>
-            <a href="#when" aria-controls="when">When</a><span aria-hidden="true"> | </span>
-            <a href="#where" aria-controls="where">Where</a><span aria-hidden="true"> | </span>
-            <a href="#how" aria-controls="how">How</a><span aria-hidden="true"> | </span>
-            <a href="#why" aria-controls="why">Why</a><span aria-hidden="true"> | </span>
+            <a href="#what" aria-controls="what">What</a><span class="trailroad-divider" aria-hidden="true">〰</span>
+            <a href="#who" aria-controls="who">Who</a><span class="trailroad-divider" aria-hidden="true">〰</span>
+            <a href="#when" aria-controls="when">When</a><span class="trailroad-divider" aria-hidden="true">〰</span>
+            <a href="#where" aria-controls="where">Where</a><span class="trailroad-divider" aria-hidden="true">〰</span>
+            <a href="#how" aria-controls="how">How</a><span class="trailroad-divider" aria-hidden="true">〰</span>
+            <a href="#why" aria-controls="why">Why</a><span class="trailroad-divider" aria-hidden="true">〰</span>
             <a href="#prompts" aria-controls="prompts">AI Prompts</a>
         </nav>
     </header>
@@ -233,16 +249,51 @@
             class="trail-intro">Choose a trail note above to explore one part of the hobby. The guide opens on <strong>What</strong>; keyboard users can navigate the links and sections in the usual way.
         </p>
         <section id="what" aria-labelledby="what-title">
-            <p class="kicker">Start here · Home</p><h2 id="what-title">What Is Day Hiking?</h2>
-            <p>Day hiking is walking a marked path and returning home before night. It can be a short neighborhood greenway loop or a full day among ridges. A good hike is less about speed than paying attention: the texture of a trail, a change in weather, birdsong, and the view earned one step at a time.</p>
-            <ul class="cards"><li><strong>Pick a route</strong>Choose a distance and difficulty that fit the day.</li><li><strong>Bring the basics</strong>Water, a snack, a charged phone, and a simple plan.</li><li><strong>Leave it better</strong>Stay on trail and carry every bit of litter back out.</li></ul>
-            <figure><img src="images/what.svg" width="720" height="400" alt="Illustrated mountain trail winding through green hills"><figcaption>A winding path makes the journey part of the destination.<br><em>AI image prompt: “Draw a calm, flat-vector day-hiking scene with layered green mountains, a cream switchback trail, and a warm sunrise; use a cohesive field-guide palette.”</em></figcaption></figure>
+            <p 
+                class="kicker">Start here · Home
+            </p>
+
+            <h2 id="what-title">What Is Day Hiking?</h2>
+
+            <p>
+                Day hiking is walking a marked path and returning home before night. It can be a short neighborhood greenway loop or a full day among ridges. A good hike is less about speed than paying attention: the texture of a trail, a change in weather, birdsong, and the view earned one step at a time.
+            </p>
+
+            <ul class="cards">
+                <li><strong>Pick a route</strong>Choose a distance and difficulty that fit the day.</li>
+                <li><strong>Bring the basics</strong>Water, a snack, a charged phone, and a simple plan.</li>
+                <li><strong>Leave it better</strong>Stay on trail and carry every bit of litter back out.</li>
+            </ul>
+
+            <figure>
+                <img src="images/what.png" width="720" height="408" alt="A winding mountain trail through green slopes at sunrise.">
+            <figcaption>
+                A trail winds through the mountains at sunrise.<br><em>AI image prompt: “A photorealistic day-hiking trail winding through green mountain slopes toward a warm sunrise.”</em>
+            </figcaption></figure>
         </section>
+
         <section id="who" aria-labelledby="who-title" hidden>
-            <p class="kicker">The people on the path</p><h2 id="who-title">Who Hikes?</h2>
-            <p>Hiking welcomes curious beginners, experienced walkers, families, solo explorers, and friends who want time together outdoors. I enjoy the mix of movement and observation: every outing gives me a reason to slow down, notice details, and make a few photographs along the way.</p>
-            <ul class="cards"><li><strong>Go at your pace</strong>There is no single right speed or distance.</li><li><strong>Share the plan</strong>Tell someone your route and expected return.</li><li><strong>Be a good trail neighbor</strong>Offer space, a greeting, and patience.</li></ul>
-            <figure><img src="images/who.svg" width="720" height="400" alt="Field journal and compass beside a leafy trail branch"><figcaption>Small observations make a trail day memorable.<br><em>AI image prompt: “Create a friendly flat-vector field journal and compass beside a leafy branch, in muted pine, cream, and clay colors.”</em></figcaption></figure>
+            <p class="kicker">
+                The people on the path</p><h2 id="who-title">Who Hikes?
+
+            </h2>
+
+            <p>
+                Hiking welcomes curious beginners, experienced walkers, families, solo explorers, and friends who want time together outdoors. I enjoy the mix of movement and observation: every outing gives me a reason to slow down, notice details, and make a few photographs along the way.
+            </p>
+
+            <ul class="cards">
+                <li><strong>Go at your pace</strong>There is no single right speed or distance.</li>
+                <li><strong>Share the plan</strong>Tell someone your route and expected return.</li>
+                <li><strong>Be a good trail neighbor</strong>Offer space, a greeting, and patience.</li>
+            </ul>
+
+            <figure>
+                <img src="images/who.png" width="720" height="390" alt="A hiker walking a mountain path beneath a range of alpine peaks.">
+                <figcaption>
+                    A hiker follows the trail through an alpine landscape.<br><em>AI image prompt: “A day hiker walking along a mountain path with evergreen forest and distant alpine peaks.”</em>
+                </figcaption>
+            </figure>
         </section>
 
         <section id="when" aria-labelledby="when-title" hidden>
@@ -262,8 +313,11 @@
             </ul>
 
             <figure>
-                <img src="images/when.svg" width="720" height="400" alt="Sunrise over mountains and a curving trail">
-                <figcaption>Plan around daylight and the day’s weather.<br><em>AI image prompt: “Illustrate a sunrise over layered hiking hills, with a clear trail and gentle seasonal colors, as a simple flat-vector field-guide panel.”</em></figcaption></figure>
+                <img src="images/when.png" width="720" height="404" alt="Morning light falls across a rocky mountain trail.">
+                <figcaption>
+                    Morning light is a lovely invitation to begin a hike.<br><em>AI image prompt: “A quiet mountain trail in early morning, with warm sunlight, clear weather, and natural landscape photography.”</em>
+                </figcaption>
+            </figure>
         </section>
 
         <section id="where" aria-labelledby="where-title" hidden>
@@ -279,8 +333,11 @@
             </ul>
 
             <figure>
-                <img src="images/where.svg" width="720" height="400" alt="Illustrated map marker and route across rolling hills">
-                <figcaption>A map and a little research help set expectations.<br><em>AI image prompt: “Design a flat-vector hiking map scene with rolling green hills, a winding cream route, and a simple location marker.”</em></figcaption></figure>
+                <img src="images/where.png" width="720" height="400" alt="A winding trail crosses evergreen hills beneath snowcapped peaks at sunset.">
+                <figcaption>
+                    A mountain trail leads toward distant snowcapped peaks.<br><em>AI image prompt: “A scenic mountain park with a winding trail, evergreen hills, snowcapped peaks, and a warm sunset.”</em>
+                </figcaption>
+            </figure>
         </section>
 
         <section id="how" aria-labelledby="how-title" hidden>
@@ -299,10 +356,8 @@
             </ul>
             
             <figure>
-                <img src="images/how.svg" width="720" height="400" alt="Hiking pack with water bottle and walking poles">
-                <figcaption>
-                    Pack for the route, weather, and your own needs.
-                <br><em>AI image prompt: “Make a clean flat-vector illustration of a day-hiking backpack, water bottle, and walking poles on a pale sage background.”</em></figcaption></figure>
+                <img src="images/how.png" width="720" height="400" alt="A hiking backpack and trekking poles sit beside an alpine trail.">
+                <figcaption>Pack what you need before setting out on the trail.<br><em>AI image prompt: “A day-hiking backpack and trekking poles beside a mountain trail, with green alpine scenery.”</em></figcaption></figure>
         </section>
 
         <section id="why" aria-labelledby="why-title" hidden>
@@ -318,10 +373,8 @@
             </ul>
 
             <figure>
-                <img src="images/why.svg" width="720" height="400" alt="A small hiker looking across a quiet mountain valley">
-                <figcaption>
-                    The view is a reminder to pause and look around.
-                <br><em>AI image prompt: “Draw a peaceful flat-vector scene with one small hiker looking over a broad green mountain valley, using a warm, restrained palette.”</em></figcaption></figure>
+                <img src="images/why.png" width="720" height="575" alt="A hiker pauses above a wide mountain valley in the evening light.">
+                <figcaption>Pause on the trail to take in the view.<br><em>AI image prompt: “A hiker pausing to take in a broad mountain valley and distant peaks at golden hour.”</em></figcaption></figure>
         </section>
 
         <section id="prompts" aria-labelledby="prompts-title" hidden>
@@ -330,20 +383,21 @@
             </p>
             <h2 id="prompts-title">AI Prompts</h2>
             <p>
-                AI helped draft the page structure, starter copy, accessibility text, and original SVG illustrations. I reviewed and edited the results for accuracy, clarity, and a consistent visual style. The illustrations are lightweight, locally stored SVG files, so no remote image service is required.
+                AI helped draft the page structure, starter copy, accessibility text, and image prompts. I reviewed and edited the results for accuracy, clarity, and a consistent visual style. The hiking images are stored with the page and load without a remote image service.
             </p>
             
             <ul class="cards">
                 <li><strong>Site structure</strong>“Build a one-page hiking hobby site with What, Who, When, Where, How, Why, and AI Prompts sections.”</li>
-                <li><strong>Visual direction</strong>“Use a cohesive flat-vector field-guide style with pine green, sage, cream, and clay accents.”</li>
+                <li><strong>Visual direction</strong>“Use a consistent natural landscape photography style with mountain trails, evergreen forests, and warm light.”</li>
                 <li><strong>Content pass</strong>“Write concise, beginner-friendly day-hiking guidance and useful image alt text.”</li>
             </ul>
 
             <figure>
-                <img src="images/prompts.svg" width="720" height="400" alt="Pencil sketching a mountain on an open field notebook">
+                <img src="images/prompt.png" width="720" height="395" alt="A winding trail crosses a broad mountain landscape beneath a warm sky.">
                 <figcaption>
-                    Ideas become useful when they are checked and refined.
-                <br><em>AI image prompt: “Create a simple flat-vector field notebook with a pencil drawing a mountain outline; match a calm outdoor field-guide palette.”</em></figcaption></figure>
+                    A shared landscape style ties the trail guide together.<br><em>AI image prompt: “A cohesive series of realistic hiking landscapes with winding paths, mountain ranges, evergreen forests, and warm natural light.”</em>
+                </figcaption>
+            </figure>
         </section>
 
         <noscript>
@@ -360,7 +414,7 @@
             <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Famwamba%2Fitis3135%2Fhobby%2F">CSS validation</a>
             <a href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/amwamba/itis3135/hobby/">Accessibility check</a>
         </nav>
-        <p>Site designed by <a href="../luxdesign.co/">Lux Design .Co</a> · © 2026</p>
+        <p>Site designed by <a href="../luxdesign.co/"> Lux Design .Co</a> · © 2026</p>
     </footer>
     <script>
         const sections = [...document.querySelectorAll('main section')];
