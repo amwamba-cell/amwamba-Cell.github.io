@@ -18,7 +18,7 @@ h1 {
 
 hr {
     box-sizing: border-box;
-    border: 0, auto;
+    border: 0;
     border-top: 2px solid #7c5517;
     margin: 20px auto;
     opacity: 0.7;
@@ -36,6 +36,10 @@ header img {
 }
 
 header nav a {
+    color: #7c5517;
+}
+
+header nav a:visited {
     color: #7c5517;
 }
 
@@ -77,6 +81,10 @@ h6 {
 a {
     color: #7c5517;
     text-decoration: underline;
+}
+
+a:visited {
+    color: #7c5517;
 }
 
 a:hover {
@@ -167,4 +175,144 @@ footer p {
         grid-template-columns: 1fr;
     }
 
+}
+
+
+/* Shared course assignment components. */
+.secondary-nav {
+    align-items: center;
+    background-color: #fff8ef;
+    border: 1px solid #b88645;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.7rem;
+    justify-content: center;
+    margin: 0.75rem auto 1rem;
+    padding: 0.65rem;
+}
+
+.secondary-nav a {
+    color: #5a3e2b;
+}
+
+.secondary-nav a:visited {
+    color: #5a3e2b;
+}
+
+.form-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: 0.75rem 0;
+}
+
+.survey-form fieldset {
+    border: 1px solid #9b7954;
+    border-radius: 8px;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.survey-form legend {
+    color: #5a3e2b;
+    font-weight: 700;
+    padding: 0 0.35rem;
+}
+
+.survey-form label {
+    display: block;
+    margin: 0.55rem 0;
+}
+
+.survey-form input:not([type="radio"]):not([type="checkbox"]),
+.survey-form select,
+.survey-form textarea {
+    background-color: #fffdf8;
+    border: 1px solid #7c5517;
+    border-radius: 4px;
+    display: block;
+    font: inherit;
+    margin-top: 0.25rem;
+    max-width: 100%;
+    padding: 0.45rem;
+}
+
+.survey-form input[type="radio"],
+.survey-form input[type="checkbox"] {
+    margin-right: 0.4rem;
+}
+
+.survey-form button,
+.action-link {
+    background-color: #5a3e2b;
+    border: 2px solid #5a3e2b;
+    border-radius: 5px;
+    color: #fffdf8;
+    display: inline-block;
+    font: inherit;
+    font-weight: 700;
+    margin: 0.25rem 0.35rem 0.25rem 0;
+    padding: 0.55rem 0.85rem;
+    text-decoration: none;
+}
+
+.survey-form button:hover,
+.action-link:hover {
+    background-color: #fff8ef;
+    color: #5a3e2b;
+}
+
+.card-gallery li {
+    border-radius: 8px;
+}
+
+.card-gallery li h3 {
+    margin: 0.4rem 0;
+}
+
+.inventory-table {
+    border-collapse: collapse;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.inventory-table caption {
+    color: #5a3e2b;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.inventory-table th,
+.inventory-table td {
+    border: 1px solid #8b6b44;
+    padding: 0.65rem;
+    text-align: left;
+}
+
+.inventory-table thead th {
+    background-color: #e8d6bd;
+    color: #3d291d;
+}
+
+.inventory-table tbody th {
+    background-color: #fff8ef;
+}
+
+.note {
+    background-color: #fff8ef;
+    border-left: 4px solid #b88645;
+    padding: 0.75rem 1rem;
+}
+
+@media (max-width: 700px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .table-wrapper {
+        overflow-x: auto;
+    }
 }

@@ -12,22 +12,36 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
+    <!-- These div placeholders let HTMLInclude.js insert the shared header and footer; class attributes reuse styles, while id attributes connect labels and section links. -->
     <div data-include="components/header.html"></div>
     <main>
         <h2>Documentation</h2>
-        <section>
-            <h3>File Transfer</h3>
-            <p>FileZilla is used to transfer course files to the UNC Charlotte web server with SFTP.</p>
+        <p>A practical field manual for planning a safe, low-impact day hike with the Adventurous Meerkat Trail Supply kit.</p>
+        <ul>
+            <li><a href="#route-plan">Choose a Route</a></li>
+            <li><a href="#pack-check">Pack and Prepare</a></li>
+            <li><a href="#trail-manners">Follow Trail Practices</a></li>
+            <li><a href="#after-hike">Finish the Hike</a></li>
+        </ul>
+        <section id="route-plan">
+            <h3>Choose a Route</h3>
+            <p>Match the trail distance, elevation gain, and surface to the least-experienced person in your group. Review an official park map and check current closures before leaving.</p>
+            <ol><li>Estimate the time needed for the full route.</li><li>Confirm park hours and daylight.</li><li>Share your route and return time with someone.</li></ol>
         </section>
-        <section>
-            <h3>Version Control</h3>
-            <p>GitHub Desktop and GitHub.com are used to track changes and manage the project repository.</p>
+        <section id="pack-check">
+            <h3>Pack and Prepare</h3>
+            <p>Carry water, food, a first-aid kit, a charged phone, navigation, and layers for the forecast. Add any medication or personal supplies your group needs.</p>
+            <p>Use footwear suited to the terrain. Keep frequently used items accessible and protect electronics from rain.</p>
         </section>
-        <section>
-            <h3>Browser Tools and Validation</h3>
-            <p>Browser tools help inspect and troubleshoot pages. The Accumulus Validator checks pages for HTML, CSS, JavaScript, and image issues.</p>
+        <section id="trail-manners">
+            <h3>Follow Trail Practices</h3>
+            <p>Stay on marked paths, give other trail users room, and observe wildlife from a distance. Follow posted rules for pets, fires, and campsites.</p>
+            <p>Pack out all litter, including food scraps. Do not pick plants or disturb rocks and natural features.</p>
         </section>
-        <p><a href="index.html">Return to the ITIS 3135 home page</a></p>
+        <section id="after-hike">
+            <h3>Finish the Hike</h3>
+            <p>Let your contact know you have returned. Check yourself and your gear for ticks, clean muddy footwear, and refill supplies before the next trip.</p>
+        </section>
     </main>
     <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.js"></script>

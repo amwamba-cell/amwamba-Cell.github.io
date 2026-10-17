@@ -12,11 +12,51 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
+    <!-- These div placeholders let HTMLInclude.js insert the shared header and footer; class attributes reuse styles, while id attributes connect labels and section links. -->
     <div data-include="components/header.html"></div>
     <main>
         <h2>Survey</h2>
-        <p>The survey assignment will be added here.</p>
-        <p><a href="index.html">Return to the ITIS 3135 home page</a></p>
+        <p>Help the Adventurous Meerkat plan better trail days. Share a few details about the routes and gear you enjoy; the contact fields also make a useful starting point for an introduction form.</p>
+        <form class="survey-form" action="survey.html" method="get">
+            <fieldset>
+                <legend>About You</legend>
+                <div class="form-grid">
+                    <label for="first-name">First name
+                        <input id="first-name" name="first-name" type="text" autocomplete="given-name" required>
+                    </label>
+                    <label for="last-name">Last name
+                        <input id="last-name" name="last-name" type="text" autocomplete="family-name" required>
+                    </label>
+                    <label for="email">Email address
+                        <input id="email" name="email" type="email" autocomplete="email" required>
+                    </label>
+                    <label for="home-trail">Your nearby trail or park
+                        <input id="home-trail" name="home-trail" type="text">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Your Trail Style</legend>
+                <p>How much hiking experience do you have?</p>
+                <label><input type="radio" name="experience" value="new" required> I am new to hiking</label>
+                <label><input type="radio" name="experience" value="some"> I hike a few times a year</label>
+                <label><input type="radio" name="experience" value="regular"> I hike regularly</label>
+                <label for="route-style">Which route sounds best?</label>
+                <select id="route-style" name="route-style" required>
+                    <option value="">Choose a route style</option>
+                    <option value="greenway">Easy greenway walk</option>
+                    <option value="forest">Shaded forest loop</option>
+                    <option value="mountain">Mountain viewpoint trail</option>
+                </select>
+                <label for="favorite-trail">What makes a trail memorable for you?
+                    <textarea id="favorite-trail" name="favorite-trail" rows="4"></textarea>
+                </label>
+                <label><input type="checkbox" name="trail-tips" value="yes"> Send me occasional trail-planning tips</label>
+            </fieldset>
+            <p><button type="submit">Send My Trail Profile</button>
+                <button type="reset">Clear Form</button>
+            </p>
+        </form>
     </main>
     <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.js"></script>

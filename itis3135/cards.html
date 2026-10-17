@@ -12,11 +12,19 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
+    <!-- These div placeholders let HTMLInclude.js insert the shared header and footer; class attributes reuse styles, while id attributes connect labels and section links. -->
     <div data-include="components/header.html"></div>
     <main>
         <h2>Cards</h2>
-        <p>This page will contain the course card gallery.</p>
-        <p><a href="index.html">Return to the ITIS 3135 home page</a></p>
+        <p>Meet the six pieces of kit in the Adventurous Meerkat's trail-card collection. Each illustrated card highlights an item that helps make an outing more comfortable, informed, or fun.</p>
+        <ul class="card-gallery">
+            <li><img src="images/backpack-card.svg" width="320" height="220" alt="Illustrated day pack for carrying hiking essentials"><h3>Trail Pack</h3><p>Carry water, snacks, a light layer, and the small things you want close at hand.</p></li>
+            <li><img src="images/binoculars-card.svg" width="320" height="220" alt="Illustrated binoculars for observing wildlife from the trail"><h3>Lookout Binoculars</h3><p>Notice birds and distant details while giving wildlife plenty of space.</p></li>
+            <li><img src="images/compass-card.svg" width="320" height="220" alt="Illustrated compass for checking direction on a hike"><h3>Trail Compass</h3><p>A simple navigation backup belongs alongside a map and a charged phone.</p></li>
+            <li><img src="images/map-card.svg" width="320" height="220" alt="Illustrated map showing a marked hiking route"><h3>Route Map</h3><p>Know the route, distance, trail markers, and exit points before setting out.</p></li>
+            <li><img src="images/mountain-card.svg" width="320" height="220" alt="Illustrated mountain summit above a winding trail"><h3>Summit View</h3><p>Choose a climb that fits the group and save time to enjoy the view.</p></li>
+            <li><img src="images/tent-card.svg" width="320" height="220" alt="Illustrated tent at a quiet campsite among hills"><h3>Camp Shelter</h3><p>For overnight adventures, follow campsite rules and keep food secured.</p></li>
+        </ul>
     </main>
     <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.js"></script>

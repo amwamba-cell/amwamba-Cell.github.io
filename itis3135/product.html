@@ -12,11 +12,32 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
+    <!-- These div placeholders let HTMLInclude.js insert the shared header and footer; class attributes reuse styles, while id attributes connect labels and section links. -->
     <div data-include="components/header.html"></div>
     <main>
         <h2>Product</h2>
-        <p>The product page assignment will be added here.</p>
-        <p><a href="index.html">Return to the ITIS 3135 home page</a></p>
+        <section class="product-hero">
+            <h3>Meerkat Trail Starter Kit</h3>
+            <p>A cheerful, practical bundle for planning an easy day hike: a compact day pack, reusable water bottle, pocket route cards, and a small first-aid pouch.</p>
+            <figure>
+                <img src="images/backpack-card.svg" width="320" height="220" alt="Illustration of a day pack filled with trail essentials">
+                <figcaption>The Trail Starter Kit keeps the basics together.</figcaption>
+            </figure>
+            <p><a class="action-link" href="survey.html">Find Your Trail Style</a></p>
+        </section>
+        <section>
+            <h3>What's Included</h3>
+            <ul><li>Lightweight day pack with adjustable straps</li><li>Reusable bottle and snack pouch</li><li>Water-resistant pocket route cards</li><li>Compact first-aid pouch</li></ul>
+        </section>
+        <section>
+            <h3>Made for First Trail Days</h3>
+            <p>The kit is designed around short, established routes and simple preparation. Choose a route that fits your experience, check local conditions, and bring any personal essentials you need.</p>
+        </section>
+        <section>
+            <h3>Plan Before You Go</h3>
+            <p>Trail access, weather, and park rules can change. Review official local information and tell someone your plan before heading out.</p>
+            <p><a href="documentation.html">Read the Trail Planning Guide</a></p>
+        </section>
     </main>
     <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.js"></script>

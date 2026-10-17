@@ -6,17 +6,32 @@
     <title>Ange Mwamba's Adventurous Meerkat | ITIS3135 | Inventory</title>
     <link rel="stylesheet" href="styles/default.css">
     <link rel="icon" type="image/png" href="images/flow_favicon.png">
-     <link rel="icon" type="image/png" sizes="128x128" href="images/flow_favicon_128.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="images/flow_favicon_128.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/flow_favicon_32.png">
     <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
+    <!-- These div placeholders let HTMLInclude.js insert the shared header and footer; class attributes reuse styles, while id attributes connect labels and section links. -->
     <div data-include="components/header.html"></div>
     <main>
         <h2>Inventory</h2>
-        <p>The inventory assignment will be added here.</p>
-        <p><a href="index.html">Return to the ITIS 3135 home page</a></p>
+        <p>The Adventurous Meerkat Trail Supply shelf keeps beginner-friendly hiking essentials in one place. Counts are a playful sample inventory for the course project.</p>
+        <div class="table-wrapper">
+            <table class="inventory-table">
+                <caption>Trail Supply Sample Inventory</caption>
+                <thead><tr><th scope="col">Item</th><th scope="col">Trail use</th><th scope="col">Quantity</th><th scope="col">Availability</th></tr></thead>
+                <tbody>
+                    <tr><th scope="row">Day Pack</th><td>Carry water, layers, and snacks</td><td>12</td><td>In stock</td></tr>
+                    <tr><th scope="row">Trail Map Set</th><td>Plan routes and identify junctions</td><td>8</td><td>In stock</td></tr>
+                    <tr><th scope="row">Water Bottle</th><td>Bring drinking water on the route</td><td>16</td><td>In stock</td></tr>
+                    <tr><th scope="row">First-Aid Pouch</th><td>Handle minor trail mishaps</td><td>4</td><td>Low stock</td></tr>
+                    <tr><th scope="row">Compact Binoculars</th><td>Observe wildlife from a distance</td><td>6</td><td>In stock</td></tr>
+                    <tr><th scope="row">Rain Shell</th><td>Add a weather layer when conditions change</td><td>0</td><td>Restocking</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="note"><strong>Trail note:</strong> Check current weather and park notices before every hike; gear cannot replace a good plan.</p>
     </main>
     <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.js"></script>
