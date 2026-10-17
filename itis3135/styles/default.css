@@ -202,7 +202,6 @@ footer p {
 
 .form-grid {
     display: grid;
-    gap: 1rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     margin: 0.75rem 0;
 }
@@ -267,7 +266,7 @@ footer p {
     border-radius: 8px;
 }
 
-.card-gallery li h3 {
+.card-title {
     margin: 0.4rem 0;
 }
 
