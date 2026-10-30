@@ -32,3 +32,32 @@ footer a:any-link:hover,
 footer a:any-link:focus-visible {
     color: #ffdf80;
 }
+
+/* Keep the portrait beside the introductory paragraphs. */
+.homepage-introduction {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(180px, 260px);
+    gap: 2rem;
+    align-items: start;
+}
+
+.homepage-portrait {
+    margin: 0;
+    text-align: center;
+}
+
+.homepage-portrait img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .homepage-introduction {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .homepage-portrait {
+        width: min(100%, 300px);
+        margin: 0 auto 1.5rem;
+    }
+}
