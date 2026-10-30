@@ -343,9 +343,18 @@ footer p {
     overflow-x: auto;
 }
 
-/* End each rectangular band at its divider line. */
-header > hr:last-child,
-footer > hr:last-child {
+/* Align divider lines with the edges facing the main content. */
+header > hr:last-child {
     margin-top: 20px;
     margin-bottom: 0;
+}
+
+footer {
+    padding-top: 0;
+    padding-bottom: 1.5rem;
+}
+
+footer > hr:first-child {
+    margin-top: 0;
+    margin-bottom: 20px;
 }
