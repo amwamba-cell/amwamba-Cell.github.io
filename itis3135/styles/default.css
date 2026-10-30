@@ -1,11 +1,30 @@
-/* Rectangular footer background. */
-footer {
-    position: relative;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1.5rem;
-    background-color: var(--footer-triangle-color, #e8d6bd);
+/* Full-width rectangular bands with centered page content. */
+html {
+    overflow-x: clip;
 }
 
+header,
+footer {
+    position: relative;
+    isolation: isolate;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: #e8d6bd;
+}
+
+header::before,
+footer::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    background-color: #e8d6bd;
+    pointer-events: none;
+}
 
 body {
     max-width: 1200px;
