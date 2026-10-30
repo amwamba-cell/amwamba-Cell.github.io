@@ -1,0 +1,12 @@
+/* Rectangular footer background. */
+footer {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: var(--footer-triangle-color, #e8d6bd);
+}
+
+
+footer {
+    --footer-triangle-color: var(--brown-dark);
+}
