@@ -214,6 +214,9 @@ footer p {
 
 /* Shared course assignment components. */
 .secondary-nav {
+    box-sizing: border-box;
+    width: fit-content;
+    max-width: 100%;
     align-items: center;
     background-color: #fff8ef;
     border: 1px solid #b88645;
@@ -227,6 +230,8 @@ footer p {
 }
 
 .secondary-nav a {
+    min-width: 0;
+    overflow-wrap: anywhere;
     color: #5a3e2b;
 }
 
