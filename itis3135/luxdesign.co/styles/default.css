@@ -10,3 +10,20 @@ footer {
 footer {
     --footer-triangle-color: #e8d6bd;
 }
+
+/* Link feedback for pointer and keyboard navigation. */
+a:any-link {
+    text-decoration: none;
+    transition: color 160ms ease;
+}
+
+a:any-link:hover,
+a:any-link:focus-visible {
+    color: #a33616;
+    text-decoration: none;
+}
+
+a:any-link:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+}
