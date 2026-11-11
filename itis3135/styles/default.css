@@ -375,3 +375,23 @@ a:any-link:focus-visible {
     outline: 2px solid currentColor;
     outline-offset: 3px;
 }
+
+/* Introduction form fields and copyable source output. */
+#introduction-form input,
+#generated-output textarea {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#generated-output label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+#generated-output textarea {
+    background: #fffdf8;
+    color: #3d291d;
+    padding: 0.75rem;
+    font-family: monospace;
+}
