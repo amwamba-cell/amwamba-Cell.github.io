@@ -89,7 +89,7 @@ form.addEventListener("click", async (event) => {
     <link rel="stylesheet" href="styles/default.css">
 </head>
 <body>
-${document.querySelector("header")?.outerHTML || ""}
+${document.querySelector("header") ? document.querySelector("header").outerHTML : ""}
 <main>
 <h2>Introduction Form</h2>
 ${introductionMarkup(data)}
