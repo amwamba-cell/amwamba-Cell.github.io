@@ -10,12 +10,74 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
+    <!-- This div lets HTMLInclude.js insert the shared course header and primary menu. -->
     <div data-include="components/header.html"></div>
     <main>
-        <h2>Pictures</h2>
-        <p>The picture gallery assignment will be added here.</p>
-        <p><a href="index.html">Return to the ITIS 3135 home page</a></p>
+<h2>Everything Pictures</h2>
+<p>This page uses my supplied flower image to explore file formats, color, resizing, proportions, and image quality. Compare the petal edges and the fine details in the daisy centers as the same picture changes.</p>
+<section>
+<h3>Pink Roses and White Daisies</h3>
+<p>I chose this flower arrangement because its soft colors fit my site and its detailed petals make changes in quality easy to compare. The image was supplied by me; the original photographer and source are unknown. The original is a PNG measuring 505 × 322 pixels, with a file size of 348,412 bytes (0.348 MB).</p>
+<article>
+<h4>Original Image and Format Conversions</h4>
+<p>Each link opens the full-size file in a new tab. GIF reduces the color palette; grayscale keeps shades of gray, while black-and-white uses only two colors.</p><p><a href="images/flow_favicon.png" target="_blank" rel="noopener noreferrer">Original PNG</a> | <a href="images/flowers-user-provided-source-unknown-505x322.gif" target="_blank" rel="noopener noreferrer">GIF Conversion</a> | <a href="images/flowers-user-provided-source-unknown-grayscale-505x322.png" target="_blank" rel="noopener noreferrer">Grayscale PNG</a> | <a href="images/flowers-user-provided-source-unknown-black-white-505x322.png" target="_blank" rel="noopener noreferrer">Black-and-White PNG</a></p><figure>
+    <img src="images/flow_favicon.png" alt="Pink roses and white daisies in a colorful flower arrangement" width="505" height="322" style="width: 505px; max-width: 100%; height: auto;">
+    <figcaption>The untouched 505 × 322 original, displayed at its natural size when space permits.</figcaption>
+</figure>
+</article>
+<article>
+<h4>Downsizing With CSS</h4>
+<p>The browser displays the original at 101 pixels wide, 20% of its original width. The full file still downloads; only its appearance changes.</p><figure>
+    <img src="images/flow_favicon.png" alt="Pink roses and white daisies in a colorful flower arrangement" width="505" height="322" style="width: 101px; height: auto;">
+    <figcaption>Inline CSS changes the width to 101 pixels and calculates the height automatically.</figcaption>
+</figure>
+</article>
+<article>
+<h4>Proper Reduction With an Editor</h4>
+<p>This separate file was resampled to 303 × 193 pixels. Since the original is only 505 pixels wide, a smaller copy is appropriate rather than an enlargement to 600 pixels. The width and height attributes reserve space while it loads.</p><figure>
+    <img src="images/flowers-user-provided-source-unknown-303x193.png" alt="Pink roses and white daisies in a colorful flower arrangement" width="303" height="193" style="width: 303px; max-width: 100%; height: auto;">
+    <figcaption>A reduced copy with its proportions preserved to the nearest whole pixel.</figcaption>
+</figure>
+</article>
+<article>
+<h4>Improper Proportions With CSS</h4>
+<p>Each step reduces one displayed dimension by 33%, then by 33% again. The other dimension stays at the 202 × 129 comparison size. The four examples stay side by side; scroll horizontally on a small screen.</p><!-- The distortion-row class keeps all four figures side by side in a horizontally scrollable comparison. -->
+<div class="distortion-row"><figure>
+    <img src="images/flow_favicon.png" alt="Pink roses and white daisies in a colorful flower arrangement" width="135" height="129" style="width: 135px; height: 129px;">
+    <figcaption>Width reduced 33%; height unchanged.</figcaption>
+</figure><figure>
+    <img src="images/flow_favicon.png" alt="Pink roses and white daisies in a colorful flower arrangement" width="91" height="129" style="width: 91px; height: 129px;">
+    <figcaption>Width reduced another 33%; height unchanged.</figcaption>
+</figure><figure>
+    <img src="images/flow_favicon.png" alt="Pink roses and white daisies in a colorful flower arrangement" width="202" height="86" style="width: 202px; height: 86px;">
+    <figcaption>Height reduced 33%; width unchanged.</figcaption>
+</figure><figure>
+    <img src="images/flow_favicon.png" alt="Pink roses and white daisies in a colorful flower arrangement" width="202" height="58" style="width: 202px; height: 58px;">
+    <figcaption>Height reduced another 33%; width unchanged.</figcaption>
+</figure></div>
+</article>
+<article>
+<h4>Improper Enlarging With CSS</h4>
+<p>The small copy contains only 126 × 81 pixels, about 25% of the original dimensions. Both files below display at 505 pixels wide when there is room. Enlarging the smaller copy cannot restore the discarded detail.</p><figure>
+    <img src="images/flow_favicon.png" alt="Pink roses and white daisies in a colorful flower arrangement" width="505" height="322" style="width: 505px; max-width: 100%; height: auto;">
+    <figcaption>Original file at a displayed width of 505 pixels: inspect the petal edges.</figcaption>
+</figure><figure>
+    <img src="images/flowers-user-provided-source-unknown-126x81.png" alt="Pink roses and white daisies in a colorful flower arrangement" width="126" height="81" style="width: 505px; max-width: 100%; height: auto;">
+    <figcaption>Quarter-size copy enlarged to the same displayed width: edges and flower centers lose definition.</figcaption>
+</figure>
+</article>
+<article>
+<h4>Derivative Files and Download Sizes</h4>
+<p>Every converted or resized copy has a descriptive filename containing its dimensions, with width before height. The original remains unchanged. The source-unknown label avoids claiming a photographer or Pexels credit that has not been supplied.</p><ul><li>flow_favicon.png: 348,412 bytes (0.348 MB).</li>
+<li>flowers-user-provided-source-unknown-126x81.png: 29,917 bytes (0.030 MB).</li>
+<li>flowers-user-provided-source-unknown-303x193.png: 140,516 bytes (0.141 MB).</li>
+<li>flowers-user-provided-source-unknown-505x322.gif: 113,912 bytes (0.114 MB).</li>
+<li>flowers-user-provided-source-unknown-black-white-505x322.png: 18,034 bytes (0.018 MB).</li>
+<li>flowers-user-provided-source-unknown-grayscale-505x322.png: 167,608 bytes (0.168 MB).</li></ul>
+</article>
+</section>
     </main>
+    <!-- This div lets HTMLInclude.js insert the shared course footer. -->
     <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.js"></script>
 </body>

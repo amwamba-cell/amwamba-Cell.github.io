@@ -395,3 +395,16 @@ a:any-link:focus-visible {
     padding: 0.75rem;
     font-family: monospace;
 }
+
+/* Keep the four intentional proportion errors visible together without stretching the page. */
+.distortion-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    overflow-x: auto;
+}
+
+.distortion-row figure {
+    flex: 0 0 202px;
+    margin: 1rem 0;
+}
