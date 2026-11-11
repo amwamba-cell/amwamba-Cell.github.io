@@ -109,6 +109,7 @@ ${footerMarkup(data)}
         output.append(label, textarea);
     }
     textarea.value = code;
+    output.hidden = false;
 });
 document.getElementById("add-course").addEventListener("click", () => {
     const row = document.createElement("fieldset");
@@ -122,12 +123,14 @@ courses.addEventListener("click", (event) => {
 form.addEventListener("reset", () => {
     courses.innerHTML = initialCourses;
     imageRead = Promise.resolve(null);
-    output.replaceChildren();
+    output.querySelectorAll("label, textarea").forEach((element) => element.remove());
+    output.hidden = true;
 });
 document.getElementById("clear").addEventListener("click", () => {
     form.querySelectorAll("input").forEach((input) => { input.value = ""; });
     imageRead = Promise.resolve(null);
-    output.replaceChildren();
+    output.querySelectorAll("label, textarea").forEach((element) => element.remove());
+    output.hidden = true;
 });
 let originalFooter;
 form.addEventListener("submit", async (event) => {
@@ -149,6 +152,6 @@ form.addEventListener("submit", async (event) => {
         form.hidden = false;
         form.previousElementSibling.hidden = false;
         result.hidden = true;
-        output.hidden = false;
+        output.hidden = true;
     });
 });
