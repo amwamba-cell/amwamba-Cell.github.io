@@ -3,6 +3,15 @@ header + hr {
     margin-top: 0;
 }
 
+/* Place the footer divider directly against the brown rectangle. */
+body > hr:has(+ footer) {
+    margin-bottom: 0;
+}
+
+body > hr + footer {
+    margin-top: 0;
+}
+
 /* Rectangular footer background. */
 footer {
     position: relative;
