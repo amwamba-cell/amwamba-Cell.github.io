@@ -1,3 +1,8 @@
+/* Place the header divider directly against the brown rectangle. */
+header + hr {
+    margin-top: 0;
+}
+
 /* Rectangular footer background. */
 footer {
     position: relative;
